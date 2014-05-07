@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Auto Accept Group Requests",
+  "version": "1",
+  "permissions": [
+     "webNavigation"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/groups/blrstartups/requests/*"],
+      "js": ["script.js"]
+    }
+  ]
+}
