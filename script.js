@@ -19,15 +19,10 @@ function accept_req(){
 			$totalFriends = parseInt($totalFriends.replace(/\D+/, ''));
 			if($totalFriends>=$friendThreshold){
 				$list[i].querySelector("a.selected").click();
-				//$present.click();
 			}
 		}
 
-	 // 	if($present!=null&&undefined!==$present){
-	 // 		$name = $list[i].querySelector(".fsl.fwb.fcb > a").innerHTML;
-		// 	//$confirm_button = $list[i].querySelector(".uiButtonConfirm").click();
-		// 	console.log($name+"'s Request accepeted("+$present.innerHTML+" Friend in group)");
-		// }
+	
 		if(i==$list.length-1){
 			be_safe();
 		}
